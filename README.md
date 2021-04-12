@@ -7,7 +7,7 @@ Sebastian's Video here: https://www.youtusbe.com/watch?v=X-iSQQgOd1A
 
 Based on this paper: https://uwe-repository.worktribe.com/output/980579
 
-All I did was add mouse interactivity in 20-30 lines 
+All I did was add mouse interactivity:
 
 ![Trypophilia](https://user-images.githubusercontent.com/45629548/114337602-aeaa8880-9b51-11eb-8e62-0af4fb966624.gif)
 
