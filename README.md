@@ -9,11 +9,13 @@ Based on this paper: https://uwe-repository.worktribe.com/output/980579
 
 All I did was add mouse interactivity in 20-30 lines: 
 
-![Trypophilia](https://user-images.githubusercontent.com/45629548/114334711-730cc000-9b4b-11eb-8ddc-88579b661738.mp4)
+![Trypophilia](https://user-images.githubusercontent.com/45629548/114337281-2a580580-9b51-11eb-87c6-ef2f2b10b775.gif)
 
-This simulation was done with only 250k agents, which is the video appears so granular.
+This simulation was done with only 250k agents, which is the video appears so granular.![2021-04-12-05-34-39](https://user-images.githubusercontent.com/45629548/114337281-2a580580-9b51-11eb-87c6-ef2f2b10b775.gif)
 
-On my Asus Flip 14, its also compatible with Multi-touch. I can just drag the slimes around with my finger, its so awesome.
+
+On my Asus Flip 14, its also compatible with Multi-touch.   
+Yes, I can just drag the slimes around with my finger. I can't stop ...
 
 ## Good Settings for Interactivity
 
