@@ -11,7 +11,7 @@ All I did was add mouse interactivity in 20-30 lines:
 
 ![Trypophilia](https://user-images.githubusercontent.com/45629548/114337281-2a580580-9b51-11eb-87c6-ef2f2b10b775.gif)
 
-This simulation was done with only 250k agents, which is the video appears so granular.![2021-04-12-05-34-39](https://user-images.githubusercontent.com/45629548/114337281-2a580580-9b51-11eb-87c6-ef2f2b10b775.gif)
+This simulation was done with only 250k agents, which is the video appears so granular.
 
 
 On my Asus Flip 14, its also compatible with Multi-touch.   
