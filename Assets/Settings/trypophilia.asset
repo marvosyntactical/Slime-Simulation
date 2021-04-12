@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2665318e53759e74db7a2d8238331945, type: 3}
+  m_Name: trypophilia
+  m_EditorClassIdentifier: 
+  stepsPerFrame: 1
+  width: 1920
+  height: 1080
+  numAgents: 380000
+  spawnMode: 2
+  trailWeight: 50
+  decayRate: 1.2
+  diffuseRate: 600
+  speciesSettings:
+  - moveSpeed: 400
+    turnSpeed: 3
+    sensorAngleSpacing: 22
+    sensorOffsetDst: 100
+    sensorSize: 1

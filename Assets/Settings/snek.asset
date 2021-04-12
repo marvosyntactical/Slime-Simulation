@@ -10,24 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2665318e53759e74db7a2d8238331945, type: 3}
-  m_Name: B
+  m_Name: snek
   m_EditorClassIdentifier: 
-  stepsPerFrame: 2
+  stepsPerFrame: 1
   width: 1920
   height: 1080
   numAgents: 25000
   spawnMode: 2
-  trailWeight: 3
-  decayRate: 0.5
-  diffuseRate: 3
+  trailWeight: 30
+  decayRate: 0.9
+  diffuseRate: 10000
   speciesSettings:
-  - moveSpeed: 50
-    turnSpeed: 30
-    sensorAngleSpacing: 45
-    sensorOffsetDst: 20
-    sensorSize: 1
-  - moveSpeed: 50
-    turnSpeed: -90
-    sensorAngleSpacing: 112
-    sensorOffsetDst: 30
+  - moveSpeed: 200
+    turnSpeed: 3
+    sensorAngleSpacing: 25
+    sensorOffsetDst: 15
     sensorSize: 1

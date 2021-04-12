@@ -26,6 +26,10 @@ RWTexture2D<float4> TrailMap;
 int width;
 int height;
 
+bool mouseDown;
+int mouseX;
+int mouseY;
+
 float trailWeight;
 
 float deltaTime;
@@ -59,6 +63,16 @@ float sense(Agent agent, SpeciesSettings settings, float sensorAngleOffset) {
 
 	float sum = 0;
 
+	int radiusDiff = 2;
+	int radiusMouse = (int) settings.sensorOffsetDst - radiusDiff;
+
+	// // // react to mouse
+	// if (agent.speciesIndex == 0) {
+	if ((abs(mouseX - min(width-1, max(0, sensorCentreX))) < radiusMouse) && (abs(mouseY - min(height-1, max(0, sensorCentreY))) < radiusMouse)) {
+		return sum + 0;
+	}
+	// }
+
 	int4 senseWeight = agent.speciesMask * 2 - 1;
 
 	for (int offsetX = -settings.sensorSize; offsetX <= settings.sensorSize; offsetX ++) {
@@ -68,7 +82,6 @@ float sense(Agent agent, SpeciesSettings settings, float sensorAngleOffset) {
 			sum += dot(senseWeight, TrailMap[int2(sampleX,sampleY)]);
 		}
 	}
-
 	return sum;
 }
 

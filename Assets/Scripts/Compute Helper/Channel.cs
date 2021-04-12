@@ -1,6 +1,5 @@
 ﻿namespace ComputeShaderUtility
 {
-
 	public enum Channel
 	{
 		Red,

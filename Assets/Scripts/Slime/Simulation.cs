@@ -19,6 +19,9 @@ public class Simulation : MonoBehaviour
 	public FilterMode filterMode = FilterMode.Point;
 	public GraphicsFormat format = ComputeHelper.defaultGraphicsFormat;
 
+	private float VerticalCameraSize; //= Camera.main.orthographicSize;
+	private float HorizontalCameraSize; // = Camera.main.orthographicSize * Camera.main.aspect;
+
 
 	[SerializeField, HideInInspector] protected RenderTexture trailMap;
 	[SerializeField, HideInInspector] protected RenderTexture diffusedTrailMap;
@@ -32,6 +35,10 @@ public class Simulation : MonoBehaviour
 	{
 		Init();
 		transform.GetComponentInChildren<MeshRenderer>().material.mainTexture = displayTexture;
+
+		VerticalCameraSize = Camera.main.orthographicSize;
+		HorizontalCameraSize = Camera.main.orthographicSize * Camera.main.aspect;
+
 	}
 
 
@@ -102,7 +109,26 @@ public class Simulation : MonoBehaviour
 		compute.SetInt("width", settings.width);
 		compute.SetInt("height", settings.height);
 
+		compute.SetBool("mouseDown", false);
+		compute.SetInt("mouseX", (int)settings.width/2);
+		compute.SetInt("mouseY",(int)settings.height/2);
 
+	}
+
+	void OnMouseDown()
+	{
+		// compute.SetBool("mouseDown", true);
+		if (Input.GetMouseButton(0))
+		{
+			compute.SetBool("mouseDown", true);
+			Debug.Log("Mouse is down!");
+		}
+	}
+
+	void OnMouseUp()
+	{
+		compute.SetBool("mouseDown", false);
+		Debug.Log("Mouse is up!");
 	}
 
 	void FixedUpdate()
@@ -131,7 +157,24 @@ public class Simulation : MonoBehaviour
 
 	void RunSimulation()
 	{
+		// update mouse position
+		Vector3 mousePos;
+		mousePos = Input.mousePosition;
+		mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
+		float CameraMouseY = VerticalCameraSize + mousePos.y;
+		float CameraMouseX = HorizontalCameraSize + mousePos.x;
+
+		float fractionUp = (CameraMouseY / (2*VerticalCameraSize));
+		float fractionRight = (CameraMouseX / (2*HorizontalCameraSize));
+
+        int mouseY = (int) (fractionUp * settings.height);
+        int mouseX = (int) (fractionRight * settings.width);
+
+		compute.SetInt("mouseX", mouseX);
+		compute.SetInt("mouseY", mouseY);
+
+		// update settings every frame
 		var speciesSettings = settings.speciesSettings;
 		ComputeHelper.CreateStructuredBuffer(ref settingsBuffer, speciesSettings);
 		compute.SetBuffer(0, "speciesSettings", settingsBuffer);

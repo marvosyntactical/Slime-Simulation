@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2665318e53759e74db7a2d8238331945, type: 3}
-  m_Name: A
+  m_Name: neuron
   m_EditorClassIdentifier: 
-  stepsPerFrame: 2
+  stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 250000
+  numAgents: 2000
   spawnMode: 2
-  trailWeight: 5
-  decayRate: 0.2
-  diffuseRate: 3
+  trailWeight: 7
+  decayRate: 0.02
+  diffuseRate: 1
   speciesSettings:
-  - moveSpeed: 20
-    turnSpeed: 2
-    sensorAngleSpacing: 30
-    sensorOffsetDst: 35
+  - moveSpeed: 200
+    turnSpeed: 4
+    sensorAngleSpacing: 18
+    sensorOffsetDst: 10
     sensorSize: 1

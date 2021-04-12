@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2665318e53759e74db7a2d8238331945, type: 3}
-  m_Name: C
+  m_Name: bruh
   m_EditorClassIdentifier: 
-  stepsPerFrame: 2
+  stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 250000
-  spawnMode: 1
-  trailWeight: 2
-  decayRate: 0.75
-  diffuseRate: 5
+  numAgents: 25000
+  spawnMode: 0
+  trailWeight: 9
+  decayRate: 0.09
+  diffuseRate: 20
   speciesSettings:
-  - moveSpeed: 30
-    turnSpeed: -3
-    sensorAngleSpacing: 112
-    sensorOffsetDst: 20
+  - moveSpeed: 60
+    turnSpeed: 40
+    sensorAngleSpacing: 60
+    sensorOffsetDst: 10
     sensorSize: 1
