@@ -9,7 +9,7 @@ Based on this paper: https://uwe-repository.worktribe.com/output/980579
 
 All I did was add mouse interactivity in 20-30 lines: 
 
-https://user-images.githubusercontent.com/45629548/114334711-730cc000-9b4b-11eb-8ddc-88579b661738.mp4
+![Trypophilia](https://user-images.githubusercontent.com/45629548/114334711-730cc000-9b4b-11eb-8ddc-88579b661738.mp4)
 
 This simulation was done with only 250k agents, which is the video appears so granular.
 
