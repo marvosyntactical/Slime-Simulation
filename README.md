@@ -28,7 +28,9 @@ For example in the setting ("Trypophilia" in the repository) shown above, you ca
 
 ## TODOs
 
-* fix WebGL color problem (?)
-* add multiplayer (hard)
+
 * make mouse click change nearby slime's species (easy)
+* add setting for mouse location correction for different screen sizes (easy)
+* fix WebGL color problem and host online (easy)
+* add multiplayer (hard)
 * add music based on activity (map regional changes to random notes) (hard)
