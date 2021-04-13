@@ -13,9 +13,9 @@ All I did was add mouse interactivity:
 
 This simulation was done with only 250k agents, which is the video appears so granular.
 
-
 On my Asus Flip 14, its also compatible with Multi-touch.   
 Yes, I can just drag the slimes around with my finger. I can't stop ...
+
 
 ## Good Settings for Interactivity
 
@@ -26,3 +26,9 @@ For example in the setting ("Trypophilia" in the repository) shown above, you ca
 * Turn speed significantly impacts how well you can steer slimes, with more controllability by you the higher the turn speed. Lower turn speed means agents mostly try to avoid you.  
 *  The Sensor Angle Spacing (together with turn speed and movement speed) seems to control the radius of the curves slimes make, with an angle spacing of 5-60 being reasonable. Lower spacing generally leads to straighter lines than large angles.
 
+## TODOs
+
+* fix WebGL color problem (?)
+* add multiplayer (hard)
+* make mouse click change nearby slime's species (easy)
+* add music based on activity (map regional changes to random notes) (hard)
