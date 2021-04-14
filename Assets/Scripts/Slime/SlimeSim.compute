@@ -125,12 +125,10 @@ void Update (uint3 id : SV_DispatchThreadID)
 		agents[id.x].angle += randomSteerStrength * turnSpeed * deltaTime;
 	}
 
-
 	// Update position
 	float2 direction = float2(cos(agent.angle), sin(agent.angle));
 	float2 newPos = agent.position + direction * deltaTime * settings.moveSpeed;
 
-	
 	// Clamp position to map boundaries, and pick new random move dir if hit boundary
 	if (newPos.x < 0 || newPos.x >= width || newPos.y < 0 || newPos.y >= height) {
 		random = hash(random);

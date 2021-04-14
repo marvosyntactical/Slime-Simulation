@@ -157,13 +157,19 @@ public class Simulation : MonoBehaviour
 
 	void RunSimulation()
 	{
+		// adjust these 2 based on results on your screen
+		// float dilation_vertical = (float) 1.04; // unity player
+		// float dilation_horizontal = (float) 1.2; // unity player
+		float dilation_vertical = (float) 1.0; // linux build
+		float dilation_horizontal = (float) 1.0; // linux build
+
 		// update mouse position
 		Vector3 mousePos;
 		mousePos = Input.mousePosition;
 		mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-		float CameraMouseY = VerticalCameraSize + mousePos.y;
-		float CameraMouseX = HorizontalCameraSize + mousePos.x;
+		float CameraMouseY = VerticalCameraSize + mousePos.y * dilation_vertical;
+		float CameraMouseX = HorizontalCameraSize + mousePos.x * dilation_horizontal;
 
 		float fractionUp = (CameraMouseY / (2*VerticalCameraSize));
 		float fractionRight = (CameraMouseX / (2*HorizontalCameraSize));

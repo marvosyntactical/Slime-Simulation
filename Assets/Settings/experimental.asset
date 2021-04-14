@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2665318e53759e74db7a2d8238331945, type: 3}
-  m_Name: trypophilia
+  m_Name: experimental
   m_EditorClassIdentifier: 
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 350000
+  numAgents: 60000
   spawnMode: 2
-  trailWeight: 50
-  decayRate: 1.2
-  diffuseRate: 9999
+  trailWeight: 20
+  decayRate: 0.7
+  diffuseRate: 0.01
   speciesSettings:
-  - moveSpeed: 400
-    turnSpeed: 1
-    sensorAngleSpacing: 22
-    sensorOffsetDst: 100
+  - moveSpeed: 300
+    turnSpeed: 6
+    sensorAngleSpacing: 24
+    sensorOffsetDst: 30
     sensorSize: 1

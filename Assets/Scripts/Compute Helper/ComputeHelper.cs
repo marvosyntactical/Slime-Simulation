@@ -16,8 +16,6 @@
 		static ComputeShader clearTextureCompute;
 		static ComputeShader swizzleTextureCompute;
 
-
-
 		// Subscribe to this event to be notified when buffers created in edit mode should be released
 		// (i.e before script compilation occurs, and when exitting edit mode)
 		public static event System.Action shouldReleaseEditModeBuffers;
@@ -32,8 +30,6 @@
 			int numGroupsZ = Mathf.CeilToInt(numIterationsZ / (float)threadGroupSizes.y);
 			cs.Dispatch(kernelIndex, numGroupsX, numGroupsY, numGroupsZ);
 		}
-
-
 
 		public static void CreateStructuredBuffer<T>(ref ComputeBuffer buffer, int count)
 		{
