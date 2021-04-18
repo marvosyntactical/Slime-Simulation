@@ -15,14 +15,20 @@ MonoBehaviour:
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 350000
-  spawnMode: 2
+  numAgents: 35000
+  spawnMode: 0
+  red_desirability: 0
+  green_desirability: 0
+  blue_desirability: 1
+  import_png: 1
+  png_is_slimes: 0
+  png_path: Assets/Images/brinkEscher.png
   trailWeight: 50
   decayRate: 1.2
   diffuseRate: 9999
   speciesSettings:
-  - moveSpeed: 400
-    turnSpeed: 1
+  - moveSpeed: 200
+    turnSpeed: 3
     sensorAngleSpacing: 22
     sensorOffsetDst: 100
     sensorSize: 1

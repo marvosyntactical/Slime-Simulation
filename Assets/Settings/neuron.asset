@@ -15,14 +15,20 @@ MonoBehaviour:
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 2000
-  spawnMode: 2
-  trailWeight: 15
-  decayRate: 0.02
-  diffuseRate: 1
+  numAgents: 9000
+  spawnMode: 3
+  red_desirability: 0
+  green_desirability: 0
+  blue_desirability: 1
+  import_png: 1
+  png_is_slimes: 1
+  png_path: Assets/Images/mcRide.png
+  trailWeight: 25
+  decayRate: 0.04
+  diffuseRate: 10
   speciesSettings:
-  - moveSpeed: 200
-    turnSpeed: 4
-    sensorAngleSpacing: 30
-    sensorOffsetDst: 10
+  - moveSpeed: 230
+    turnSpeed: 2
+    sensorAngleSpacing: 28
+    sensorOffsetDst: 19
     sensorSize: 1

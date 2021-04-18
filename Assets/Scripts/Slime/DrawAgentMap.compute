@@ -19,7 +19,6 @@ void DrawAgentMap (uint3 id : SV_DispatchThreadID)
 		return;
 	}
 
-
 	Agent agent = agents[id.x];
 	// Draw to trail map
 	int cellX = (int)agent.position.x;

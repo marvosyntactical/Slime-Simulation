@@ -38,17 +38,22 @@ public class Simulation : MonoBehaviour
 
 		VerticalCameraSize = Camera.main.orthographicSize;
 		HorizontalCameraSize = Camera.main.orthographicSize * Camera.main.aspect;
-
 	}
-
 
 	void Init()
 	{
-
 		// Create render textures
 		ComputeHelper.CreateRenderTexture(ref trailMap, settings.width, settings.height, filterMode, format);
 		ComputeHelper.CreateRenderTexture(ref diffusedTrailMap, settings.width, settings.height, filterMode, format);
 		ComputeHelper.CreateRenderTexture(ref displayTexture, settings.width, settings.height, filterMode, format);
+
+		Texture2D background = null;
+
+		if (settings.import_png) 
+		{
+			background = ComputeHelper.PNGToTexture2D(settings.png_path);
+			ComputeHelper.CopyRenderTexture(background, trailMap);
+		}
 
 		// Create agents with initial positions and angles
 		Agent[] agents = new Agent[settings.numAgents];
@@ -90,7 +95,26 @@ public class Simulation : MonoBehaviour
 			}
 			else
 			{
-				int species = Random.Range(1, numSpecies + 1);
+				int species=1;
+				if (settings.import_png & settings.png_is_slimes)
+				{
+					Color pixelcolor = background.GetPixel((int) startPos.x, (int) startPos.y);
+
+					float max = pixelcolor.r;
+					
+					if (pixelcolor.g > max)
+					{
+						max = pixelcolor.g;
+						species = 2;
+					}
+					if (pixelcolor.b > max)
+					{
+						species = 3;
+					}
+					
+				} else {
+					species = Random.Range(1, numSpecies + 1);
+				}
 				speciesIndex = species - 1;
 				speciesMask = new Vector3Int((species == 1) ? 1 : 0, (species == 2) ? 1 : 0, (species == 3) ? 1 : 0);
 			}
@@ -112,6 +136,7 @@ public class Simulation : MonoBehaviour
 		compute.SetBool("mouseDown", false);
 		compute.SetInt("mouseX", (int)settings.width/2);
 		compute.SetInt("mouseY",(int)settings.height/2);
+
 
 	}
 
@@ -185,7 +210,6 @@ public class Simulation : MonoBehaviour
 		ComputeHelper.CreateStructuredBuffer(ref settingsBuffer, speciesSettings);
 		compute.SetBuffer(0, "speciesSettings", settingsBuffer);
 
-
 		// Assign textures
 		compute.SetTexture(updateKernel, "TrailMap", trailMap);
 		compute.SetTexture(diffuseMapKernel, "TrailMap", trailMap);
@@ -199,7 +223,6 @@ public class Simulation : MonoBehaviour
 		compute.SetFloat("decayRate", settings.decayRate);
 		compute.SetFloat("diffuseRate", settings.diffuseRate);
 
-
 		ComputeHelper.Dispatch(compute, settings.numAgents, 1, 1, kernelIndex: updateKernel);
 		ComputeHelper.Dispatch(compute, settings.width, settings.height, 1, kernelIndex: diffuseMapKernel);
 
@@ -208,7 +231,6 @@ public class Simulation : MonoBehaviour
 
 	void OnDestroy()
 	{
-
 		ComputeHelper.Release(agentBuffer, settingsBuffer);
 	}
 

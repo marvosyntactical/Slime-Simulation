@@ -12,6 +12,16 @@ public class SlimeSettings : ScriptableObject
 	public int numAgents = 100;
 	public Simulation.SpawnMode spawnMode;
 
+
+	[Header("Background Settings")]
+	public float red_desirability = 0;
+	public float green_desirability = 0;
+	public float blue_desirability = 1;
+
+	public bool import_png = false;
+	public bool png_is_slimes = false;
+	public string png_path = "/home/silversurfer42/fun/Slime-Simulation/Images/diamond.jpg";
+
 	[Header("Trail Settings")]
 	public float trailWeight = 1;
 	public float decayRate = 1;

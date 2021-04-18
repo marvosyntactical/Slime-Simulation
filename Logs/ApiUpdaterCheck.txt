@@ -68,3 +68,133 @@ C# parse time         : 300ms
 candidates check time : 72ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 4/16/2021 12:25:32 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 93.74ms
+moved types parse time: 69ms
+candidates parse time : 1ms
+C# parse time         : 265ms
+candidates check time : 44ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 12:52:18 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 100.567ms
+moved types parse time: 65ms
+candidates parse time : 1ms
+C# parse time         : 274ms
+candidates check time : 46ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 1:48:23 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 95.339ms
+moved types parse time: 65ms
+candidates parse time : 1ms
+C# parse time         : 270ms
+candidates check time : 43ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 1:49:32 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 51.81ms
+moved types parse time: 63ms
+candidates parse time : 1ms
+C# parse time         : 330ms
+candidates check time : 71ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 1:59:44 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 98.624ms
+moved types parse time: 65ms
+candidates parse time : 1ms
+C# parse time         : 333ms
+candidates check time : 72ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 2:00:16 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 53.206ms
+moved types parse time: 65ms
+candidates parse time : 1ms
+C# parse time         : 329ms
+candidates check time : 69ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 2:03:38 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 54.676ms
+moved types parse time: 64ms
+candidates parse time : 1ms
+C# parse time         : 328ms
+candidates check time : 69ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 2:03:44 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 53.377ms
+moved types parse time: 64ms
+candidates parse time : 1ms
+C# parse time         : 328ms
+candidates check time : 65ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 2:18:23 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 92.08ms
+moved types parse time: 71ms
+candidates parse time : 1ms
+C# parse time         : 341ms
+candidates check time : 53ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/16/2021 2:27:28 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 95.939ms
+moved types parse time: 66ms
+candidates parse time : 1ms
+C# parse time         : 328ms
+candidates check time : 56ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/18/2021 12:40:47 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 99.41ms
+moved types parse time: 88ms
+candidates parse time : 2ms
+C# parse time         : 420ms
+candidates check time : 94ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/18/2021 1:24:33 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 62.446ms
+moved types parse time: 88ms
+candidates parse time : 2ms
+C# parse time         : 413ms
+candidates check time : 101ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 4/18/2021 1:25:29 AM : Starting /home/silversurfer42/Downloads/unityEditors/2020.3.3f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 64.234ms
+moved types parse time: 86ms
+candidates parse time : 2ms
+C# parse time         : 429ms
+candidates check time : 97ms
+console write time    : 0ms
+

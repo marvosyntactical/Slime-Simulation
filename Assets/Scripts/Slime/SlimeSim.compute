@@ -22,6 +22,8 @@ StructuredBuffer<SpeciesSettings> speciesSettings;
 RWStructuredBuffer<Agent> agents;
 uint numAgents;
 
+RWTexture2D<float4> BackGroundMap;
+
 RWTexture2D<float4> TrailMap;
 int width;
 int height;

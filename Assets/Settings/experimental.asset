@@ -15,14 +15,30 @@ MonoBehaviour:
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 60000
-  spawnMode: 2
-  trailWeight: 20
-  decayRate: 0.7
-  diffuseRate: 0.01
+  numAgents: 200000
+  spawnMode: 3
+  red_desirability: 0
+  green_desirability: 0
+  blue_desirability: 1
+  import_png: 1
+  png_is_slimes: 0
+  png_path: Assets/Images/vanGogh.png
+  trailWeight: 13
+  decayRate: 0.09
+  diffuseRate: 1
   speciesSettings:
-  - moveSpeed: 300
-    turnSpeed: 6
-    sensorAngleSpacing: 24
-    sensorOffsetDst: 30
+  - moveSpeed: 123
+    turnSpeed: 3
+    sensorAngleSpacing: 18
+    sensorOffsetDst: 18
+    sensorSize: 1
+  - moveSpeed: 123
+    turnSpeed: 3
+    sensorAngleSpacing: 18
+    sensorOffsetDst: 18
+    sensorSize: 1
+  - moveSpeed: 123
+    turnSpeed: 3
+    sensorAngleSpacing: 18
+    sensorOffsetDst: 18
     sensorSize: 1

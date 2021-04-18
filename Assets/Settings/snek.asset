@@ -15,8 +15,14 @@ MonoBehaviour:
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 25000
-  spawnMode: 2
+  numAgents: 100000
+  spawnMode: 0
+  red_desirability: 0
+  green_desirability: 0
+  blue_desirability: 1
+  import_png: 1
+  png_is_slimes: 0
+  png_path: Assets/Images/labyrinth.png
   trailWeight: 30
   decayRate: 0.9
   diffuseRate: 10000

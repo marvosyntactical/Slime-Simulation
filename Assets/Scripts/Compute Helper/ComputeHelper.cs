@@ -124,6 +124,15 @@
 			texture.filterMode = filterMode;
 		}
 
+		public static Texture2D PNGToTexture2D(string png_path)
+		{
+			Texture2D tex = new Texture2D(2,2);
+			var data = System.IO.File.ReadAllBytes(png_path);
+			tex.LoadImage(data);
+			return tex;
+
+		}
+
 		/// Copy the contents of one render texture into another. Assumes textures are the same size.
 		public static void CopyRenderTexture(Texture source, RenderTexture target)
 		{
