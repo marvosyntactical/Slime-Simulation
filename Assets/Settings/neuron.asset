@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: neuron
   m_EditorClassIdentifier: 
   stepsPerFrame: 1
-  width: 1920
-  height: 1080
-  numAgents: 9000
+  width: 400
+  height: 225
+  numAgents: 900
   spawnMode: 3
   red_desirability: 0
   green_desirability: 0
   blue_desirability: 1
-  import_png: 1
+  import_png: 0
   png_is_slimes: 1
   png_path: Assets/Images/mcRide.png
   trailWeight: 25
-  decayRate: 0.04
-  diffuseRate: 10
+  decayRate: 0.9
+  diffuseRate: 0
   speciesSettings:
-  - moveSpeed: 230
+  - moveSpeed: 30
     turnSpeed: 2
     sensorAngleSpacing: 28
     sensorOffsetDst: 19

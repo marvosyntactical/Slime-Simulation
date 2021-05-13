@@ -15,30 +15,20 @@ MonoBehaviour:
   stepsPerFrame: 1
   width: 1920
   height: 1080
-  numAgents: 200000
-  spawnMode: 3
+  numAgents: 2000
+  spawnMode: 0
   red_desirability: 0
   green_desirability: 0
   blue_desirability: 1
   import_png: 1
-  png_is_slimes: 0
-  png_path: Assets/Images/vanGogh.png
-  trailWeight: 13
+  png_is_slimes: 1
+  png_path: Assets/Images/metro.png
+  trailWeight: 130
   decayRate: 0.09
-  diffuseRate: 1
+  diffuseRate: 10
   speciesSettings:
   - moveSpeed: 123
-    turnSpeed: 3
-    sensorAngleSpacing: 18
-    sensorOffsetDst: 18
-    sensorSize: 1
-  - moveSpeed: 123
-    turnSpeed: 3
-    sensorAngleSpacing: 18
-    sensorOffsetDst: 18
-    sensorSize: 1
-  - moveSpeed: 123
-    turnSpeed: 3
+    turnSpeed: 1
     sensorAngleSpacing: 18
     sensorOffsetDst: 18
     sensorSize: 1
